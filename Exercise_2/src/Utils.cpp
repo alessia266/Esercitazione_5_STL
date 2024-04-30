@@ -304,7 +304,7 @@ bool ImportCell1Ds(const string& filename,
 
         converter >> id >> marker >> vertices(0) >> vertices(1);
 
-        //test if marker has been stored correctly
+        //test if marker is set according to the coordinates
         unsigned int m0 = mesh.IdMark0D.find(vertices(0))->second;
         unsigned int m1 = mesh.IdMark0D.find(vertices(1))->second;
         switch (marker)
